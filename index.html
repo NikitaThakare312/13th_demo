@@ -1,0 +1,51 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="...">
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Expense Tracker</h1>
+
+        <!-- Add Expense Form -->
+        <form id="expenseForm">
+            <div class="form-group">
+                <label for="expenseAmount">Expense Amount:</label>
+                <input type="number" class="form-control" id="expenseAmount" placeholder="Enter amount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" class="form-control" id="description" placeholder="Enter description" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <input type="text" class="form-control" id="category" placeholder="Enter category" required>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="addExpense()">Add Expense</button>
+        </form>
+
+        <!-- Expense List -->
+        <ul class="list-group mt-4" id="expenseList">
+            <!-- Expenses will be dynamically added here -->
+        </ul>
+    </div>
+
+    <!-- Include Bootstrap JavaScript and custom script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="..."></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="..."></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="..."></script>
+    <!-- Include custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
